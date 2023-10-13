@@ -56,17 +56,18 @@
             // 
             this.txthasil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txthasil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthasil.Location = new System.Drawing.Point(14, 69);
+            this.txthasil.Location = new System.Drawing.Point(11, 12);
             this.txthasil.Multiline = true;
             this.txthasil.Name = "txthasil";
             this.txthasil.Size = new System.Drawing.Size(437, 43);
             this.txthasil.TabIndex = 0;
             this.txthasil.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txthasil.TextChanged += new System.EventHandler(this.txthasil_TextChanged);
             // 
             // txtinput
             // 
             this.txtinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtinput.Location = new System.Drawing.Point(14, 21);
+            this.txtinput.Location = new System.Drawing.Point(11, 69);
             this.txtinput.Multiline = true;
             this.txtinput.Name = "txtinput";
             this.txtinput.Size = new System.Drawing.Size(437, 43);
@@ -101,7 +102,7 @@
             this.btnhapus.Name = "btnhapus";
             this.btnhapus.Size = new System.Drawing.Size(94, 76);
             this.btnhapus.TabIndex = 4;
-            this.btnhapus.Text = " ⌫ ";
+            this.btnhapus.Text = " ⌫";
             this.btnhapus.UseVisualStyleBackColor = true;
             this.btnhapus.Click += new System.EventHandler(this.btnhapus_Click);
             // 
@@ -134,7 +135,7 @@
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(94, 76);
             this.btn9.TabIndex = 8;
-            this.btn9.Text = " 9";
+            this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btnAngka_Click);
             // 
@@ -178,7 +179,7 @@
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(94, 76);
             this.btn6.TabIndex = 12;
-            this.btn6.Text = " 6";
+            this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btnAngka_Click);
             // 
@@ -222,7 +223,7 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(94, 76);
             this.btn3.TabIndex = 16;
-            this.btn3.Text = " 3";
+            this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btnAngka_Click);
             // 

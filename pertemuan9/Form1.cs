@@ -13,12 +13,6 @@ namespace pertemuan9
         double temp;
         char oper;
         bool oper1;
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            bersih();
-            fokus();
-        }
-
         private void bersih()
         {
             txthasil.Text = "0";
@@ -27,12 +21,17 @@ namespace pertemuan9
             oper = ' ';
             oper1 = false;
         }
-
         private void fokus()
         {
             txthasil.Focus();
             txthasil.Select(txthasil.Text.Length, 1);
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            bersih();
+            fokus();
+        }
+
         private void btnC_Click(object sender, EventArgs e)
         {
             bersih();
@@ -79,13 +78,13 @@ namespace pertemuan9
                     {
                         temp = temp / Convert.ToDouble(txthasil.Text);
                     }
-                    else if (oper == 'X')
+                    else if (oper == 'x')
                     {
                         temp = temp * Convert.ToDouble(txthasil.Text);
                     }
                 }
             }
-            if (oper == '=')
+            if (op.Text == "=")
             {
                 txtinput.Text = "";
                 txthasil.Text = temp.ToString();
@@ -103,6 +102,10 @@ namespace pertemuan9
         {
             txthasil.Text = txthasil.Text.Remove(txthasil.Text.Length - 1);
 
+            if ((txthasil.Text == "") || (txthasil.Text == "-"))
+            {
+                txthasil.Text = "0";
+            }
             if (oper == '=')
             {
                 temp = 0;
@@ -110,6 +113,11 @@ namespace pertemuan9
                 oper = ' ';
             }
             fokus();
+        }
+
+        private void txthasil_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
