@@ -57,6 +57,7 @@ namespace pertemuan9
         }
         private void btnOperator_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Berhasil");
             Button op = (Button)sender;
             if (oper1 == false)
             {
